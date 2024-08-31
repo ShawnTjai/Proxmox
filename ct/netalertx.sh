@@ -54,8 +54,8 @@ function default_settings() {
 
 function update_script() {
 header_info
-if [[ ! -d /opt/pialert ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
-bash -c "$(wget -qLO - https://raw.githubusercontent.com/jokob-sk/NetAlertX/main/install/install.debian.sh)" -s --lxc
+if [[ ! -d /opt/netalertx ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/jokob-sk/NetAlertX/main/install/install.debian.sh)" -s
 msg_ok "Updated $APP"
 exit
 }
